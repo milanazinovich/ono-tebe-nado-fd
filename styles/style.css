@@ -183,6 +183,7 @@ header {
   padding-left: 24px;
   padding-right: 24px;
   gap: 25px;
+  list-style: none;
 }
 
 .content_lots_regisur {
@@ -215,26 +216,22 @@ header {
   background-position: center;
 }
 
-.card_lots {
-  list-style: none;
-}
-
 article {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-style: bold;
   font-size: 22px;
-  line-height: 120%;
-  width: 300px;
-  height: 82px;
-  padding-left: 40px;
-  padding-top: 48px;
   text-transform: uppercase;
   text-decoration: underline;
   text-decoration-style: solid;
   color: #FFFFFF;
   offset: 0%;
   text-decoration-thickness: 0%;
+  line-height: 120%;
+  width: 300px;
+  height: 82px;
+  padding-left: 40px;
+  padding-top: 48px;
 }
 
  .lots_underline {
