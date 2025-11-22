@@ -6,8 +6,15 @@
   padding-right: 50px;
 }
 
-.underline {
+.header__link,
+.footer_link {
   border-bottom: 1px solid;
+}
+
+.header__link_active,
+.footer_link_active {
+  text-decoration: none;
+  border-bottom: none;
 }
 
 .header__menu {
@@ -45,6 +52,7 @@
   font-weight: normal;
   font-size: 18px;
   font-style: normal;
+  line-height: 24px;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -54,24 +62,18 @@
   margin-right: 39px;
 }
 
-.right_address {
+.header__address {
   justify-self: end;
   margin-right: 10px;
-  padding-bottom: 6px;
+  padding-bottom: 10px;
 }
-.telephone {
-  margin-bottom: 5px;
-  border-bottom: 1px solid;
-}
-
-.gmail {
-  margin-top: -2px;
+.address_link {
   border-bottom: 1px solid;
 }
 
 .address_line {
   width: 230px;
-  line-height: 25px;
+  line-height: 24.3px;
 }
 
 .overlay {
@@ -83,7 +85,7 @@
 
 .cover {
   width: 1100px;
-  height: 757px;
+  max-height: 757px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   margin-bottom: 180px;
@@ -96,8 +98,8 @@
   font-family: Raleway, sans-serif;
   font-size: 100px;
   font-weight: 700;
-  line-height: 114, 9%;
-  letter-spacing: 30%;
+  line-height: 1.149;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   position: relative;
   color: #ffffff;
@@ -133,7 +135,6 @@
 .description {
   font-family: Raleway, sans-serif;
   font-weight: normal;
-  letter-spacing: 0%;
   position: relative;
   display: flex;
   justify-content: end;
@@ -148,7 +149,7 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 90%;
+  letter-spacing: 0.9em;
   word-spacing: 18px;
   text-transform: uppercase;
   position: relative;
@@ -205,25 +206,25 @@
   background-size: cover;
   background-position: center;
   margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
 }
 
-.lots_underline {
+.title_underline {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-style: bold;
   font-size: 22px;
   text-transform: uppercase;
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-style: solid;
   color: #ffffff;
-  offset: 0%;
+  text-underline-offset: 0%;
   text-decoration-thickness: 0%;
   line-height: 120%;
-  width: 300px;
-  height: 82px;
   padding-left: 40px;
   padding-top: 48px;
+  max-width: 295px;
 }
 
 .text-lots {
@@ -231,12 +232,11 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 120%;
-  padding-left: 40px;
   color: #fff;
-  width: 295px;
-  padding-bottom: 50px;
-  position: absolute;
-  bottom: 0;
+  padding-left: 40px;
+  margin-top: auto;
+  margin-bottom: 50px;
+  max-width: 295px;
   z-index: 2;
 }
 
@@ -256,14 +256,10 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 310px 1fr;
-  grid-template-rows: auto; /* ← Только одна строка */
+  grid-template-rows: auto;
   gap: 0;
   align-items: start;
   max-width: 1200px;
-}
-
-.about_header {
-  display: contents;
 }
 
 .about_logo_circle {
@@ -275,7 +271,7 @@
   align-items: center;
   justify-content: center;
   grid-column: 1;
-  grid-row: 1; /* ← Круг в первой строке */
+  grid-row: 1;
   margin-left: 71px;
   margin-top: 155px;
 }
@@ -322,13 +318,12 @@
   padding-bottom: 82px;
 }
 
-.left_address {
-  padding-bottom: 45px;
-  line-height: 21px;
+.footer__address {
+  padding-bottom: 43px;
 }
 
 .address_line_footer {
-  width: 330px;
+  width: 260px;
   line-height: 25px;
 }
 
