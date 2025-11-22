@@ -253,7 +253,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 310px 1fr;
-  grid-template-rows: auto; 
+  grid-template-rows: auto;
   gap: 0;
   align-items: start;
   max-width: 1200px;
@@ -268,7 +268,7 @@
   align-items: center;
   justify-content: center;
   grid-column: 1;
-  grid-row: 1; 
+  grid-row: 1;
   margin-left: 71px;
   margin-top: 155px;
 }
