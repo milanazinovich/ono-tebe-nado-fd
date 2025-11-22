@@ -13,8 +13,8 @@
 
 .header__link_active,
 .footer_link_active {
-  text-decoration: none;
-  border-bottom: none;
+ text-decoration: none;
+ border-bottom: none;
 }
 
 .header__menu {
@@ -98,8 +98,6 @@
   font-family: Raleway, sans-serif;
   font-size: 100px;
   font-weight: 700;
-  line-height: 1.149;
-  letter-spacing: 0.3em;
   text-transform: uppercase;
   position: relative;
   color: #ffffff;
@@ -149,7 +147,6 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0.9em;
   word-spacing: 18px;
   text-transform: uppercase;
   position: relative;
@@ -216,9 +213,9 @@
   font-size: 22px;
   text-transform: uppercase;
   text-decoration: underline;
+  text-underline-offset: 2px;
   text-decoration-style: solid;
   color: #ffffff;
-  text-underline-offset: 2px;
   text-decoration-thickness: 0%;
   line-height: 120%;
   padding-left: 40px;
@@ -256,7 +253,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 310px 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: auto; 
   gap: 0;
   align-items: start;
   max-width: 1200px;
@@ -271,7 +268,7 @@
   align-items: center;
   justify-content: center;
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 1; 
   margin-left: 71px;
   margin-top: 155px;
 }
@@ -316,10 +313,6 @@
   padding-right: 50px;
   margin-top: 158px;
   padding-bottom: 82px;
-}
-
-.footer__address {
-  padding-bottom: 43px;
 }
 
 .address_line_footer {
