@@ -195,16 +195,19 @@
   background-image: url(../images/card-lot-02.jpg);
 }
 
-.content_lots {
+.image_lots {
   width: 334px;
   min-height: 596px;
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
   background-position: center;
-  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
+}
+
+.card_lots {
+  margin-bottom: 32px;
 }
 
 .title_underline {
@@ -317,7 +320,6 @@
 
 .address_line_footer {
   width: 260px;
-  line-height: 25px;
 }
 
 .footer_menu {
